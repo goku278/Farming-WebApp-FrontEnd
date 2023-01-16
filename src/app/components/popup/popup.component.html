@@ -1,0 +1,29 @@
+<div class="row" id="row-id">
+  <div class="col-10">
+    <mat-dialog-content>
+      What do you like to do with this product?
+    </mat-dialog-content>
+    <mat-dialog-actions>
+      <button
+        [mat-dialog-close]
+        type="submit"
+        class="btn btn-primary"
+        id="btn-addtocart"
+        (click)="processOrder('cart')"
+      >
+        Add To Cart
+      </button>
+      <button
+        [mat-dialog-close]
+        type="submit"
+        class="btn btn-warning"
+        id="btn-order"
+        style="margin-left: 0.7rem"
+        (click)="processOrder('order')"
+      >
+        Order
+      </button>
+    </mat-dialog-actions>
+  </div>
+  <div class="col-2"></div>
+</div>

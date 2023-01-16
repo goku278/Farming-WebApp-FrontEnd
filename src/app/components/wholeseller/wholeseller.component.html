@@ -1,0 +1,139 @@
+<body class="main-container-wholeseller">
+  <div class="main">
+    <div class="container text-center" style="background-color: #ebedef">
+      <div class="row">
+        <div class="col-2">
+          <div class="side-nav-1">
+            <div class="card" id="card-wholeseller">
+              <h6
+                style="
+                  float: left;
+                  font-style: normal;
+                  font-size: x-small;
+                  margin-top: 1.1rem;
+                  margin-left: 1.2rem;
+                  text-align: start;
+                  border-style: none;
+                  border-color: white;
+                "
+              >
+                Wholeseller
+              </h6>
+              <img
+                src="assets/img/menu-100.png"
+                style="width: 1.5rem; transform: translate(6.7rem, -2.5rem)"
+              />
+              <p style="font-style: normal; float: left; margin-right: 4.5rem">
+                Menu
+              </p>
+              <div class="side-nav-items" style="background-color: #ebedef">
+                <ul>
+                  <li class="list-items-wholeseller">
+                    <h6 id="dashboard-wholeseller">Dashboard</h6>
+                    <h6 id="dashboard-wholeseller">Customer</h6>
+                    <h6 id="dashboard-wholeseller">Earnings</h6>
+                    <h6 id="dashboard-wholeseller">Product Sales</h6>
+                    <h6 id="dashboard-wholeseller" (click)="myOrders('order')">My Orders</h6>
+                    <h6 (click)="viewProducts()" id="dashboard-wholeseller">
+                      View Products
+                    </h6>
+                    <h6 id="dashboard-wholeseller">Request Products</h6>
+                    <h6 id="dashboard-wholeseller" (click)="myOrders('cart')">My Cart</h6>
+                    <h6 id="dashboard-wholeseller" (click)="logOut()">
+                      Logout
+                    </h6>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-10" style="background-color: #ebedef">
+          <div class="nav-center-wholeselle" style="background-color: #ebedef">
+            <div class="left-content">Dashboard</div>
+            <div class="right-content">
+              <ul>
+                <li>
+                  <img src="assets/img/notification.png" id="notification" />
+                </li>
+                <li>
+                  <div class="icon-placeholder"></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Second row contents -->
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card" id="card-middle">
+                <p id="store-status">Store Status</p>
+                <p id="really-good">Really Good</p>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card" id="card-middle">
+                <p id="store-status">Total sales</p>
+                <p id="really-good"></p>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card" id="card-middle">
+                <p id="store-status">Total Profit</p>
+                <p id="really-good"></p>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card" id="card-middle">
+                <p id="store-status">Total Cost</p>
+                <p id="really-good"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-6" id="c-list">
+              <p
+                style="
+                  font-style: normal;
+                  font-size: x-small;
+                  float: left;
+                  color: #000000;
+                  margin-top: 1.2rem;
+                "
+              >
+                Customer List
+              </p>
+              <br />
+              <br />
+              <ul>
+                <li *ngFor="let s of status">
+                  <h5 style="font-size: xx-small; scroll-margin-top: 12rem">
+                    {{ s.message }}
+                  </h5>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-6" id="sales-list">
+              <p
+                style="
+                  font-style: normal;
+                  font-size: x-small;
+                  float: left;
+                  color: #000000;
+                  margin-top: 1.2rem;
+                "
+              >
+                Sales List
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

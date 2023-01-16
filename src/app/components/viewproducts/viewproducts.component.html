@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <div class="col-1">
+      <br />
+      <img (click)="back()" src="assets/img/undo.png" style="width: 2rem; height: 2rem" />
+    </div>
+  </div>
+</div>
+
+<div style="background-color: #ffffff; align-items: center">
+  <br />
+  <div class="container">
+    <div class="row" id="row-card-id-11">
+      <ng-container *ngFor="let p of viewProducts">
+        <div class="card col-md-2" id="material-card-admin-dashboard-id" (click)="prompt(p)">
+          <span
+            class="glyphicon glyphicon-education"
+            style="font-size: 24px; color: red"
+          ></span>
+          <img style="width: 100%; height: 100%" src="{{ p.productImage }}" />
+          Name
+          <h5>{{ p.productName }}</h5>
+          Cost
+          <h6>{{ p.productCost }}</h6>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>

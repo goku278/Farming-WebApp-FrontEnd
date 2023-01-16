@@ -1,0 +1,117 @@
+<span
+  class="glyphicon glyphicon-remove"
+  style="font-size: 25px; color: maroon"
+  id="add-book-delete-1"
+  mat-button
+  mat-dialog-close
+></span>
+
+<div class="container text-center">
+  <div class="row">
+    <div class="col-2"></div>
+    <div class="col-10">
+      <form>
+        <!-- <mat-dialog-content> -->
+        <div class="col-10">
+          <img
+            src="assets/img/addproduct.png"
+            style="
+              width: 4rem;
+              height: 4rem;
+              margin-top: 3rem;
+              margin-right: 5.2rem;
+            "
+          />
+          <label for="library_name" id="username-login">Product Name</label>
+          <input
+            type="text"
+            [(ngModel)]="addProduct.productName"
+            name="userName"
+            class="form-control"
+            id="passwordd-id"
+            placeholder="Enter Product Name"
+          />
+        </div>
+        <!-- <br /> -->
+        <div class="col-10">
+          <label for="admin_id" id="password-login">Product Type</label>
+          <input
+            type="password"
+            [(ngModel)]="addProduct.productType"
+            name="email"
+            class="form-control"
+            id="passwordd-id"
+            placeholder="Enter Product Type"
+          />
+        </div>
+        <div class="col-10">
+          <label for="admin_id" id="password-login">Product Image</label>
+          <input
+            type="text"
+            [(ngModel)]="addProduct.productImage"
+            name="email"
+            class="form-control"
+            id="passwordd-id"
+            placeholder="Enter Product Image"
+          />
+        </div>
+        <div class="col-10">
+          <label for="admin_id" id="password-login">Product Qty</label>
+          <input
+            type="text"
+            [(ngModel)]="addProduct.productQty"
+            name="email"
+            class="form-control"
+            id="passwordd-id"
+            placeholder="Enter Product Qty"
+          />
+        </div>
+        <div class="col-10">
+          <label for="admin_id" id="password-login">Product Cost</label>
+          <input
+            type="text"
+            [(ngModel)]="addProduct.productCost"
+            name="email"
+            class="form-control"
+            id="passwordd-id"
+            placeholder="Enter Product Cost"
+          />
+        </div>
+        <!-- </mat-dialog-content> -->
+        <br />
+        <!-- <br /> -->
+        <div class="col-10" id="btn">
+          <button
+            mat-button
+            mat-dialog-close
+            type="submit"
+            (click)="addProducts(addProduct)"
+            class="btn btn-primary mb-3"
+            id="sub-btn-1"
+          >
+            <!-- <a routerlink="/userdashboard"> -->
+            Add Product
+            <!-- </a> -->
+          </button>
+          <button
+            mat-button
+            mat-dialog-close
+            type="reset"
+            class="btn btn-danger mb-3"
+            id="reset-btn-1"
+          >
+            Reset
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="col-md-9">
+  <div class="row">
+    <div class="col-md-12">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div> -->

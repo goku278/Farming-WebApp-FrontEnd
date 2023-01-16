@@ -1,0 +1,81 @@
+<div class="main-container-2">
+  <br /><br />
+
+  <p
+    style="
+      font-family: Lorem ipsum dolor sit amet;
+      font-size: large;
+      color: blue;
+      text-align: center;
+    "
+  >
+    My {{ type }}
+  </p>
+  <br />
+  <div class="container" style="align-items: center">
+    <div class="row">
+      <div class="col-12">
+        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+          <ng-container matColumnDef="id">
+            <th mat-header-cell *matHeaderCellDef style="padding-top: 15px">
+              Order Id
+            </th>
+            <td mat-cell *matCellDef="let element">{{ element.orderId }}</td>
+          </ng-container>
+
+          <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef style="padding-top: 15px">
+              Product Name
+            </th>
+            <td mat-cell *matCellDef="let element">
+              {{ element.productName }}
+            </td>
+          </ng-container>
+
+          <ng-container matColumnDef="image">
+            <th mat-header-cell *matHeaderCellDef style="padding-top: 15px">
+              Product Image
+            </th>
+            <td mat-cell *matCellDef="let element">
+              <img style="width: 15%" src="{{ element.productImage }}" />
+            </td>
+          </ng-container>
+
+          <ng-container matColumnDef="cost">
+            <th mat-header-cell *matHeaderCellDef style="padding-top: 15px">
+              Product Cost
+            </th>
+            <td mat-cell *matCellDef="let element">
+              {{ element.productCost }}
+            </td>
+          </ng-container>
+
+          <ng-container matColumnDef="address">
+            <th mat-header-cell *matHeaderCellDef style="padding-top: 15px">
+              Shipping Address
+            </th>
+            <td mat-cell *matCellDef="let element">
+              {{ element.userAddress }}
+            </td>
+          </ng-container>
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+        </table>
+        <!-- <mat-paginator
+          [pageSizeOptions]="[5, 10, 20]"
+          showFirstLastButtons
+          aria-label="Select page of periodic elements"
+        >
+        </mat-paginator> -->
+      </div>
+      <div class="col-12">
+        <mat-paginator
+          [pageSizeOptions]="[3, 6, 10]"
+          showFirstLastButtons
+          aria-label="Select page of periodic elements"
+        >
+        </mat-paginator>
+      </div>
+    </div>
+  </div>
+</div>

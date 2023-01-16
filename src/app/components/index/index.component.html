@@ -1,0 +1,20 @@
+<div id="r-tab" class="right-tab">
+  <ul class="signin">
+    <li class="signup">
+      <a routerlink="/signin" (click)="signin()">SignIn</a>
+    </li>
+    <li class="signup">
+      <a routerlink="/signup" (click)="signup()">SignUp</a>
+    </li>
+  </ul>
+</div>
+
+<div id="outlet-part" class="outlet-class">
+  <div class="col-md-12">
+    <div class="row">
+      <div class="col-md-12">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>

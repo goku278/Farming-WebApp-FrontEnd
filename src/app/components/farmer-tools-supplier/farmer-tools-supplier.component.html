@@ -1,0 +1,348 @@
+<div>
+  <div class="main">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-1">
+          <div class="side-nav-supplier">
+            <ul>
+              <img
+                style="width: 1.2rem; transform: translate(-1.6rem, 2.73rem)"
+                src="assets/img/overview.png"
+              />
+              <li class="stylish-text">Overview</li>
+
+              <img
+                style="width: 1.2rem; transform: translate(-1.6rem, 2.73rem)"
+                src="assets/img/projects.png"
+              />
+              <li class="stylish-text">Products</li>
+
+              <img
+                style="width: 1.2rem; transform: translate(-1.6rem, 2.73rem)"
+                src="assets/img/tasks.png"
+              />
+              <li class="stylish-text">Tasks</li>
+
+              <img
+                style="width: 1.2rem; transform: translate(-1.6rem, 2.73rem)"
+                src="assets/img/message.png"
+              />
+              <li class="stylish-text">Inbox</li>
+
+              <img
+                style="width: 1.2rem; transform: translate(-1.6rem, 2.73rem)"
+                src="assets/img/documents.png"
+              />
+              <li class="stylish-text">Documents</li>
+
+              <img
+                style="width: 1.2rem; transform: translate(-1.6rem, 2.73rem)"
+                src="assets/img/analytics.png"
+              />
+              <li class="stylish-text">Analytics</li>
+
+              <img
+                style="width: 1.2rem; transform: translate(-1.6rem, 2.73rem)"
+                src="assets/img/logout.png"
+              />
+              <li class="stylish-text" (click)="logOut()">Logout</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-8">
+          <h6 style="float: left; margin-top: 5%">Welcome</h6>
+          <h6
+            style="
+              float: right;
+              margin-top: 5%;
+              font-style: normal;
+              font-weight: lighter;
+              font-size: x-small;
+            "
+          >
+            Sunday,December 25,2022
+          </h6>
+
+          <div class="upper-row-supplier">
+            <div class="container text-center">
+              <div class="row">
+                <div class="col">
+                  <div
+                    class="card"
+                    id="card-supplier"
+                    style="
+                      background-color: #f06292;
+                      width: 7.5rem;
+                      height: 3.7rem;
+                    "
+                  >
+                    <img
+                      style="
+                        width: 1.2rem;
+                        float: right;
+                        transform: translate(6.1rem, 0.7rem);
+                      "
+                      src="assets/img/menu.png"
+                    />
+                    <h6
+                      (click)="addProducts()"
+                      style="
+                        font-size: x-small;
+                        color: white;
+                        border-radius: 50rem;
+                        padding-top: 1.2rem;
+                        transform: translate(0rem, -1.2rem);
+                      "
+                    >
+                      Add Products
+                    </h6>
+                    <!-- <h6
+                      style="
+                        font-size: x-small;
+                        color: white;
+                        margin-bottom: 1.2rem;
+                        transform: translate(0rem, -1.2rem);
+                      "
+                    >
+                      Tools & Products
+                    </h6> -->
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div
+                    class="card"
+                    id="card-supplier"
+                    style="
+                      background-color: #3f51b5;
+                      width: 7.5rem;
+                      height: 3.7rem;
+                    "
+                  >
+                    <img
+                      style="
+                        width: 1.2rem;
+                        float: right;
+                        transform: translate(6.1rem, 0.7rem);
+                      "
+                      src="assets/img/menu.png"
+                    />
+                    <h6
+                      style="
+                        font-size: x-small;
+                        color: white;
+                        border-radius: 50rem;
+                        padding-top: 1.2rem;
+                        transform: translate(0rem, -1.2rem);
+                      "
+                    >
+                      Profile
+                    </h6>
+                    <h6
+                      style="
+                        font-size: x-small;
+                        color: white;
+                        margin-bottom: 1.2rem;
+                        transform: translate(0rem, -1.2rem);
+                      "
+                    ></h6>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div
+                    class="card"
+                    id="card-supplier"
+                    (click)= viewProducts()
+                    style="
+                      background-color: #ffb74d;
+                      width: 7.5rem;
+                      height: 3.7rem;
+                    "
+                  >
+                    <img
+                      style="
+                        width: 1.2rem;
+                        float: right;
+                        transform: translate(6.1rem, 0.7rem);
+                      "
+                      src="assets/img/menu.png"
+                    />
+                    <h6
+                      style="
+                        font-size: x-small;
+                        color: white;
+                        border-radius: 50rem;
+                        padding-top: 1.2rem;
+                        transform: translate(0rem, -1.2rem);
+                      "
+                    >
+                      View All Products
+                    </h6>
+                    <h6
+                      style="
+                        font-size: x-small;
+                        color: white;
+                        margin-bottom: 1.2rem;
+                        transform: translate(0rem, -1.2rem);
+                      "
+                    ></h6>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div
+                    class="card"
+                    id="card-supplier-1"
+                    style="
+                      background-color: #9575cd;
+                      width: 7.5rem;
+                      height: 3.7rem;
+                    "
+                  >
+                    <img
+                      style="
+                        width: 1.2rem;
+                        float: right;
+                        transform: translate(6.1rem, 0.7rem);
+                      "
+                      src="assets/img/menu.png"
+                    />
+                    <h6
+                      style="
+                        font-size: x-small;
+                        color: white;
+                        border-radius: 50rem;
+                        padding-top: 1.2rem;
+                        transform: translate(0rem, -1.2rem);
+                      "
+                    >
+                      Farmer's Request
+                    </h6>
+                    <h6
+                      style="
+                        font-size: x-small;
+                        color: white;
+                        margin-bottom: 1.2rem;
+                        transform: translate(0rem, -1.2rem);
+                      "
+                    ></h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lower-stats">
+            <div class="left-lower-status">
+              <img
+                style="
+                  width: 60%;
+                  height: 14rem;
+                  border-radius: 18px;
+                  float: left;
+                "
+                src="assets/img/supplier-stats.png"
+              />
+            </div>
+
+            <div class="right-lower-stats">
+              <img
+                style="
+                  width: 30%;
+                  height: 14rem;
+                  border-radius: 18px;
+                  float: right;
+                "
+                src="assets/img/right-lower-stats.png"
+              />
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-3" id="last-col-supplier">
+          <img
+            src="assets/img/logout-2.png"
+            style="width: 1.2rem; float: right; margin-top: 2rem"
+          />
+          <div class="circularimage-supplier"></div>
+
+          <h6
+            style="
+              font-style: normal;
+              font-weight: lighter;
+              font-size: x-small;
+              margin-top: 1.2rem;
+            "
+          >
+            Biswadeep Chakraborty
+          </h6>
+
+          <div
+            style="
+              font-style: normal;
+              font-weight: lighter;
+              float: left;
+              margin-left: 1.5rem;
+            "
+            class="bottom-contents"
+          >
+            Supplier
+            <div class="card" style="margin-top: 1.2rem;background-color: #FFFFFF;">
+              <h5
+                style="
+                  width: 10rem;
+                  height: 0.5rem;
+                  margin-top: 1.2rem;
+                  color: #283593;
+                  font-weight: bolder;
+                  font-size: xx-small;
+                "
+              >
+                Upcoming Tractors
+              </h5>
+              <h5
+                style="
+                  width: 10rem;
+                  height: 1.2rem;
+                  color: #000000;
+                  font-weight: bolder;
+                  font-size: xx-small;
+                "
+              >
+                Check All Upcoming Tractors
+              </h5>
+            </div>
+
+            <div class="card" style="margin-top: 1.2rem;background-color: #FFFFFF;">
+              <h5
+                style="
+                  width: 10rem;
+                  height: 0.5rem;
+                  margin-top: 1.2rem;
+                  color: #283593;
+                  font-weight: bolder;
+                  font-size: xx-small;
+                "
+              >
+                Assigned Work
+              </h5>
+              <h5
+                style="
+                  width: 10rem;
+                  height: 1.2rem;
+                  color: #000000;
+                  font-weight: bolder;
+                  font-size: xx-small;
+                "
+              >
+                Check All Assigned Works
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

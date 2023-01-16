@@ -1,0 +1,88 @@
+<body style="background-color: #f0f3f4">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-1">
+        <div class="side-nav-consumer-1">
+          <h6 class="side-nav-consumer">Consumer Inc.</h6>
+          <img src="assets/img/menu_1.png" class="menu-consumer" />
+          <h6 class="dashboard-text-consumer">Dashboard</h6>
+          <img src="assets/img/purchases.png" class="menu-purchases" />
+          <h6 class="dashboard-text-purchases">Purchases</h6>
+          <img src="assets/img/profile.png" class="menu-profile" />
+          <h6 class="dashboard-text-profile">Profile</h6>
+          <img
+            src="assets/img/cart.png"
+            class="menu-profile"
+            (click)="myOrders('cart')"
+          />
+          <h6 class="dashboard-text-profile" (click)="myOrders('cart')">
+            Cart
+          </h6>
+          <img src="assets/img/settings-consumer.png" class="menu-settings" />
+          <h6 class="dashboard-text-settings">Settings</h6>
+          <img
+            src="assets/img/logout.png"
+            (click)="logOut()"
+            class="menu-settings"
+          />
+          <h6 class="dashboard-text-settings" (click)="logOut()">Logout</h6>
+        </div>
+      </div>
+      <div class="col-10">
+        <div class="middle-upper-section">
+          <!-- <h6 style="float: left;">Dashboard</h6> -->
+          <div class="row">
+            <div class="col-3">
+              <div class="card" id="view-shopkeepers-consumer-card">
+                <h6 class="shopkeeper-card-consumer">View Shop keepers</h6>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card" id="view-product-items-consumer-card" (click)="viewProducts()">
+                <h6 class="shopkeeper-card-consumer">
+                  View All Product Items
+                </h6>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card" id="view-purchases-consumer-card">
+                <h6 class="shopkeeper-card-consumer">Purchases</h6>
+              </div>
+            </div>
+            <div class="col-3">
+              <div
+                class="card"
+                id="view-my-orders-consumer-card"
+                (click)="myOrders('order')"
+              >
+                <h6 class="shopkeeper-card-consumer">My Orders</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-10">
+          <img
+            src="assets/img/lower-image-consumer.png"
+            class="lower-image-consumer"
+          />
+        </div>
+
+        <div class="card" id="daily-purchases-report">
+          <h6 class="daily-purchases-text-report">Daily Purchases</h6>
+          <img
+            src="assets/img/daily-purchases-report-image.png"
+            class="daily-purchases-image-report-image"
+          />
+        </div>
+
+        <div class="yearly-report">
+          <img
+            src="assets/img/yearly-report-image.png"
+            class="yearly-report-image"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

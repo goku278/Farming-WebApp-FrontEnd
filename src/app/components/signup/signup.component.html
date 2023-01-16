@@ -1,0 +1,199 @@
+<div class="container text-center">
+  <div class="row">
+    <div class="col-4"></div>
+    <div class="col-6">
+      <!-- {{ message }} -->
+      <form>
+        <div class="col-8">
+          <img
+            src="assets/img/signup.png"
+            style="width: 12rem; height: 11rem"
+          />
+          <label for="library_name" class="visually-hidden">Name</label>
+          <input
+            type="text"
+            [(ngModel)]="user.name"
+            name="userName"
+            class="form-control"
+            id="user-name"
+            placeholder="Enter Name"
+          />
+        </div>
+        <br />
+        <div class="col-8">
+          <label for="admin_id" class="visually-hidden">Email</label>
+          <input
+            type="text"
+            [(ngModel)]="user.email"
+            name="email"
+            class="form-control"
+            id="email-id"
+            placeholder="Enter emailId"
+          />
+        </div>
+
+        <br />
+
+        <div class="col-8">
+          <label for="admin_id" class="visually-hidden">Role</label>
+          <select
+            class="form-select"
+            aria-label="Default select example"
+            [(ngModel)]="selected"
+            name="selected"
+          >
+            <option selected>Choose Role</option>
+            <option value="ADMIN">ADMIN</option>
+            <option value="SUPPLIER">SUPPLIER</option>
+            <option value="FARMER">FARMER</option>
+            <option value="WHOLE SELLER">WHOLE SELLER</option>
+            <option value="SHOPKEEPER">SHOP KEEPER</option>
+            <option value="CONSUMER">CONSUMER</option>
+          </select>
+        </div>
+
+        <br />
+
+        <div class="col-8">
+          <label for="admin_id" class="visually-hidden">Mobile</label>
+          <input
+            type="text"
+            [(ngModel)]="user.mobile"
+            name="qualification"
+            class="form-control"
+            id="qualification-id"
+            placeholder="Enter mobile"
+          />
+        </div>
+
+        <br />
+
+        <div class="col-8">
+          <label for="admin_id" class="visually-hidden">Street Name</label>
+          <input
+            type="text"
+            [(ngModel)]="user.streetName"
+            name="resident"
+            class="form-control"
+            id="resident-id"
+            placeholder="Enter Street Name"
+          />
+        </div>
+
+        <br />
+
+        <div class="col-8">
+          <label for="admin_id" class="visually-hidden">Pin code</label>
+          <input
+            type="text"
+            [(ngModel)]="user.pinCode"
+            name="pincode"
+            class="form-control"
+            id="pin-code-id"
+            placeholder="Enter pincode"
+          />
+        </div>
+
+        <br />
+
+        <div class="col-8">
+          <label for="admin_id" class="visually-hidden">State</label>
+          <input
+            type="text"
+            [(ngModel)]="user.state"
+            name="state"
+            class="form-control"
+            id="district-id"
+            placeholder="Enter State"
+          />
+        </div>
+
+        <br />
+
+        <!-- <var> -->
+          <div class="col-8">
+            <label for="admin_id" class="visually-hidden">Landmark</label>
+            <input
+              type="text"
+              [(ngModel)]="user.landMark"
+              name="landmark"
+              class="form-control"
+              id="district-id"
+              placeholder="Enter Landmark"
+            />
+          </div>
+
+          <div class="col-8">
+            <label for="admin_id" class="visually-hidden">Image</label>
+            <input
+              type="text"
+              [(ngModel)]="user.image"
+              name="image"
+              class="form-control"
+              id="image-id"
+              placeholder="Enter Image"
+            />
+          </div>
+
+
+          <br />
+
+          <!-- <div class="col-8">
+            <label for="admin_id" class="visually-hidden">HouseNo</label>
+            <input
+              type="text"
+              name="houseNo"
+              class="form-control"
+              id="house-no-id"
+              placeholder="Enter HouseNo"
+            />
+          </div>
+          <br />
+
+          <div class="col-8">
+            <label for="admin_id" class="visually-hidden">Landmark</label>
+            <input
+              type="text"
+              name="landMark"
+              class="form-control"
+              id="landmark-id"
+              placeholder="Enter landmark"
+            />
+          </div>
+
+          <br />
+
+          <div class="col-8">
+            <label for="admin_id" class="visually-hidden">ContactNo</label>
+            <input
+              type="text"
+              name="contactNo"
+              class="form-control"
+              id="contact-no-id"
+              placeholder="Enter contactNo"
+            />
+          </div> -->
+        <!-- </var> -->
+
+        <!-- <br /> -->
+        <!-- <br /> -->
+        <div class="col-8" id="btn">
+          <button
+            type="submit"
+            class="btn btn-primary mb-10"
+            id="sub-btn"
+            (click)="signup(user)"
+          >
+            Signin
+          </button>
+          <!-- <button type="reset" class="btn btn-danger mb-3" id="reset-btn">
+            Reset
+          </button> -->
+        </div>
+        <br />
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- {{ selected }} -->

@@ -1,0 +1,170 @@
+<body style="background-color: #f8f9f9">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-12">
+        <div class="nav-bar-shopkeeper">
+          <img src="assets/img/shopkeeper.png" class="icon-shop" />
+          <h5 class="text-shop">Shop Keeper</h5>
+          <!-- <h5 class="my-order">My Orders</h5>
+          <h5 class="my-order">My Cart</h5> -->
+          <input
+            type="text"
+            placeholder="Search anything..."
+            class="search-shop"
+          />
+          <img src="assets/img/search-shopkeeper.png" class="icon-search" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-1">
+        <div class="side-nav-bar-shopkeeper">
+          <!-- <h5 class="home-shopkeeper" style="transform: translate(0rem, 2rem)">
+            Home
+          </h5> -->
+          <!-- <h5 class="profile-shopkeeper">Profile</h5>
+          <h5 class="profile-shopkeeper">Wholesellers</h5>
+          <h5 class="profile-shopkeeper">Market place</h5>
+          <h5 class="profile-shopkeeper">Logout</h5> -->
+
+            <ul>
+              <li class="profile-shopkeeper">Home</li>
+              <li class="profile-shopkeeper">Profile</li>
+              <li class="profile-shopkeeper" (click)="viewProducts()">Market place</li>
+              <li class="profile-cart" (click)="myOrders('order')">My Orders</li>
+              <li class="profile-cart" (click)="myOrders('cart')">My Cart</li>
+              <li class="profile-cart" (click)="logOut()">Logout</li>
+            </ul>
+
+        </div>
+      </div>
+
+      <div class="col-11">
+        <h6 class="products-heading">Related Products</h6>
+        <div class="inner-body">
+          <div class="row">
+            <div class="card" id="card-tomato">
+              <img src="assets/img/tomato-card.jpg" style="margin-top: 2rem" />
+              <p style="font-size: small; font-style: normal; margin-top: 1rem">
+                Tomatoes
+              </p>
+              <h6 style="font-size: small; font-style: normal">10/-</h6>
+              <h6 style="font-size: small; font-style: normal">Buy Tomatoes</h6>
+            </div>
+
+            <div class="card" id="card-tomato">
+              <img src="assets/img/potato-card.png" style="margin-top: 2rem" />
+              <p style="font-size: small; font-style: normal; margin-top: 1rem">
+                Potatoes
+              </p>
+              <h6 style="font-size: small; font-style: normal">10/-</h6>
+              <h6 style="font-size: small; font-style: normal">Buy Potatoes</h6>
+            </div>
+
+            <div class="card" id="card-tomato">
+              <img
+                src="assets/img/orange-card.jpg"
+                style="margin-top: 2rem; height: 5rem"
+              />
+              <p style="font-size: small; font-style: normal; margin-top: 1rem">
+                Orange
+              </p>
+              <h6 style="font-size: small; font-style: normal">70/-</h6>
+              <h6 style="font-size: small; font-style: normal">Buy Orange</h6>
+            </div>
+
+            <div class="card" id="card-tomato">
+              <img
+                src="assets/img/grapes-card.png"
+                style="margin-top: 2rem; height: 5rem"
+              />
+              <p style="font-size: small; font-style: normal; margin-top: 1rem">
+                Grapes
+              </p>
+              <h6 style="font-size: small; font-style: normal">150/-</h6>
+              <h6 style="font-size: small; font-style: normal">Buy Grapes</h6>
+            </div>
+
+            <div class="card" id="card-tomato">
+              <img
+                src="assets/img/brinjal-card.jpg"
+                style="margin-top: 2rem; height: 5rem"
+              />
+              <p style="font-size: small; font-style: normal; margin-top: 1rem">
+                Brinjal
+              </p>
+              <h6 style="font-size: small; font-style: normal">100/-</h6>
+              <h6 style="font-size: small; font-style: normal">Buy Brinjal</h6>
+            </div>
+          </div>
+
+          <br />
+
+          <div class="row">
+            <div class="card" id="card-tomato">
+              <img
+                src="assets/img/pumkin-card.png"
+                style="margin-top: 2rem; height: 5rem"
+              />
+              <p style="font-size: small; font-style: normal; margin-top: 1rem">
+                Pumkin
+              </p>
+              <h6 style="font-size: small; font-style: normal">200/-</h6>
+              <h6 style="font-size: small; font-style: normal">Buy Pumkin</h6>
+            </div>
+
+            <div class="card" id="card-tomato">
+              <img
+                src="assets/img/watermelon-card.png"
+                style="margin-top: 2rem; height: 5rem"
+              />
+              <p style="font-size: small; font-style: normal; margin-top: 1rem">
+                Watermelon
+              </p>
+              <h6 style="font-size: small; font-style: normal">100/-</h6>
+              <h6 style="font-size: small; font-style: normal">
+                Buy Watermelon
+              </h6>
+            </div>
+
+            <div class="card" id="card-tomato">
+              <img
+                src="assets/img/apple-card.png"
+                style="margin-top: 2rem; height: 5rem"
+              />
+              <p style="font-size: small; font-style: normal; margin-top: 1rem">
+                Apple
+              </p>
+              <h6 style="font-size: small; font-style: normal">150/-</h6>
+              <h6 style="font-size: small; font-style: normal">Buy Apple</h6>
+            </div>
+
+            <div class="card" id="card-tomato">
+              <img
+                src="assets/img/banana-card.png"
+                style="margin-top: 2rem; height: 5rem"
+              />
+              <p style="font-size: small; font-style: normal; margin-top: 1rem">
+                Banana
+              </p>
+              <h6 style="font-size: small; font-style: normal">50/-</h6>
+              <h6 style="font-size: small; font-style: normal">Buy Banana</h6>
+            </div>
+
+            <div class="card" id="card-tomato">
+              <img
+                src="assets/img/coconut-card.png"
+                style="margin-top: 2rem; height: 5rem"
+              />
+              <p style="font-size: small; font-style: normal; margin-top: 1rem">
+                Coconut
+              </p>
+              <h6 style="font-size: small; font-style: normal">250/-</h6>
+              <h6 style="font-size: small; font-style: normal">Buy Coconut</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
